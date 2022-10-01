@@ -1,0 +1,201 @@
+package {
+    default_applicable_licenses: ["packages_apps_Settings_license"],
+}
+
+// Added automatically by a large-scale-change
+// See: http://go/android-license-faq
+license {
+    name: "packages_apps_Settings_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+java_library {
+    name: "settings-logtags",
+    srcs: ["src/**/*.logtags"],
+}
+
+genrule {
+    name: "statslog-settings-java-gen",
+    tools: ["stats-log-api-gen"],
+    cmd: "$(location stats-log-api-gen) --java $(out) --module settings"
+        + " --javaPackage com.android.settings.core.instrumentation --javaClass SettingsStatsLog",
+    out: ["com/android/settings/core/instrumentation/SettingsStatsLog.java"],
+}
+
+java_library {
+    name: "statslog-settings",
+    srcs: [
+        ":statslog-settings-java-gen",
+    ],
+}
+
+// Build the Settings APK
+android_library {
+    name: "Settings-core",
+    platform_apis: true,
+    defaults: [
+        "SettingsLibDefaults",
+        "SettingsLib-search-defaults",
+    ],
+
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "CumSettings/src/**/*.java",
+        "CumSettings/src/**/*.kt",
+    ],
+
+    aaptflags: ["--extra-packages com.cum.settings"],
+
+    resource_dirs: [
+        "res",
+        "CumSettings/res",
+    ],
+
+    static_libs: [
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.slice_slice-builders",
+        "androidx.slice_slice-core",
+        "androidx.slice_slice-view",
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+        "androidx.cardview_cardview",
+        "androidx.fragment_fragment",
+        "androidx.fragment_fragment-ktx",
+        "androidx.lifecycle_lifecycle-runtime-ktx",
+        "androidx.preference_preference",
+        "androidx.preference_preference-ktx",
+        "androidx.recyclerview_recyclerview",
+        "androidx.window_window",
+        "com.google.android.material_material",
+        "setupcompat",
+        "setupdesign",
+        "androidx.lifecycle_lifecycle-runtime",
+        "androidx.lifecycle_lifecycle-extensions",
+        "guava",
+        "jsr305",
+        "net-utils-framework-common",
+        "settings-contextual-card-protos-lite",
+        "settings-log-bridge-protos-lite",
+        "settings-telephony-protos-lite",
+        "contextualcards",
+        "settings-logtags",
+        "statslog-settings",
+        "zxing-core-1.7",
+        "android.hardware.dumpstate-V1.0-java",
+        "android.hardware.dumpstate-V1.1-java",
+        "glide",
+        "lottie",
+        "WifiTrackerLib",
+        "SettingsLibActivityEmbedding",
+        "accountfeatureprovidergoogle",
+        "SettingsLibMainSwitchPreference",
+        "kotlinx_coroutines_android",
+        "kotlinx_coroutines",
+        "vendor.lineage.fastcharge-V1.0-java",
+        "kotlinx_coroutines_android",
+        "kotlinx_coroutines",
+        "androidx.preference_preference-ktx",
+        "android.frameworks.stats-V1-java",
+        "google-fuelgauge",
+        "google-securityhub",
+    ],
+
+    libs: [
+        "telephony-common",
+        "ims-common",
+        "app-compat-annotations",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+platform_compat_config {
+    name: "settings-platform-compat-config",
+    src: ":Settings-core",
+    system_ext_specific: true,
+}
+
+android_app {
+    name: "Settings",
+    defaults: ["platform_app_defaults"],
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    privileged: true,
+    required: [
+        "privapp_whitelist_com.android.settings",
+        "settings-platform-compat-config",
+    ],
+    static_libs: ["Settings-core"],
+    uses_libs: ["org.apache.http.legacy"],
+    resource_dirs: [],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+android_library_import {
+    name: "google-fuelgauge",
+    aars: ["libs/google-fuelgauge.aar"],
+    sdk_version: "33",
+    static_libs: [
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.appcompat_appcompat",
+        "androidx.preference_preference",
+        "lottie",
+    ]
+}
+
+android_library_import {
+    name: "google-securityhub",
+    aars: ["libs/google-securityhub.aar"],
+    sdk_version: "33",
+    static_libs: [
+        "androidx.preference_preference",
+        "com.google.android.material_material",
+        "guava",
+    ]
+}
+
+android_library_import {
+    name: "contextualcards",
+    aars: ["libs/contextualcards.aar"],
+}
+
+filegroup {
+    name: "Settings_proguard_flags",
+    srcs: ["proguard.flags"],
+}
+
+// The sources for Settings need to be exposed to SettingsGoogle, etc.
+// so they can run the com.android.settingslib.search.IndexableProcessor
+// over all the sources together.
+filegroup {
+    name: "Settings_srcs",
+    srcs: ["src/**/*.java"],
+}
+
+filegroup {
+    name: "Settings_manifest",
+    srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
+}
+
+java_import {
+    name: "accountfeatureprovidergoogle",
+    jars: ["libs/accountfeatureprovidergoogle.jar"],
+    sdk_version: "current",
+}

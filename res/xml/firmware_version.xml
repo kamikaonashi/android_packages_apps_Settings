@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2019 The Android Open Source Project
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/about_device_info"
+    settings:keywords="@string/keywords_android_version">
+
+    <!-- Cum info -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="cum_info"
+        android:layout="@layout/cum_info"
+        android:selectable="false" />
+        
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_android_version"
+        settings:layout="@layout/cum_card_about"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- Battery -->
+    <Preference
+        android:key="battery"
+        settings:layout="@layout/cum_card_about"
+        android:title="@string/battery"
+        android:icon="@drawable/batteryab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
+    <!-- Chipset -->
+    <Preference
+        android:key="chipset"
+        settings:layout="@layout/cum_card_about"
+        android:title="@string/chipset"
+        android:icon="@drawable/chipsetab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
+    <!-- Display -->
+    <Preference
+        android:key="display"
+        settings:layout="@layout/cum_card_about"
+        android:title="@string/display"
+        android:icon="@drawable/displayab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+        
+    <!-- Security patch -->
+    <Preference
+        android:key="security_key"
+        android:title="@string/security_patch"
+        android:icon="@drawable/ic_device_status"
+        settings:layout="@layout/cum_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+
+    <!-- Kernel -->
+    <Preference
+        android:key="kernel_version"
+        android:title="@string/kernel_version"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_legal"
+        settings:layout="@layout/cum_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+        
+    <!-- Baseband -->
+    <Preference
+        android:key="base_band"
+        android:title="@string/baseband_version"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_model_hardware"
+        android:selectable="false"
+        settings:layout="@layout/cum_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+
+    <!-- Storage -->
+    <Preference
+        android:key="storage"
+        settings:layout="@layout/cum_card_about"
+        android:title="@string/storage"
+        android:icon="@drawable/storageab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 The Cum OS Project
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="1927"
+    android:viewportHeight="1927"
+    android:width="24dp"
+    android:height="24.5dp">
+    <group
+        android:scaleX="0.1"
+        android:scaleY="-0.1"
+        android:translateY="794">
+        <path
+            android:pathData="M7087 7528c-346 -20 -878 -170 -1297 -365 -241 -112 -428 -217 -592 -333 -116 -81 -350 -307 -435 -420 -109 -144 -198 -345 -246 -558 -18 -82 -22 -128 -22 -297 0 -212 8 -279 62 -490 46 -184 24 -279 -133 -567 -194 -356 -202 -383 -244 -903 -28 -341 -68 -473 -175 -580 -95 -95 -278 -163 -495 -186 -172 -17 -314 -2 -705 76 -350 70 -421 79 -580 72 -369 -16 -626 -178 -783 -492 -105 -211 -135 -368 -167 -870 -39 -602 -70 -777 -166 -927 -87 -135 -224 -189 -580 -228 -222 -24 -317 -39 -324 -50 -22 -36 526 -55 698 -25 160 28 285 97 384 212 167 195 232 369 344 922 77 380 119 523 194 656 47 85 145 189 209 223 48 25 59 27 191 27 139 0 141 0 225 -36 454 -195 694 -273 966 -314 129 -19 386 -19 497 0 242 42 438 145 602 317 256 265 408 607 540 1212 57 261 97 364 172 440 78 80 148 91 280 45 147 -52 260 -71 458 -76 150 -4 210 -2 285 11 340 59 705 278 981 589 561 631 969 1520 969 2113 0 219 -75 434 -197 559 -182 190 -480 269 -916 243z"
+            android:fillColor="#000000" />
+    </group>
+</vector>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux 狀態</string>
+    <string name="selinux_status_disabled">已停用</string>
+    <string name="selinux_status_permissive">許可</string>
+    <string name="selinux_status_enforcing">強制執行</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">點擊顯示詳細資料</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Maintainer -->
+    <string name="maintainer">維護人員</string>
+    <!-- Battery temperature -->
+    <string name="battery_temp">電池溫度</string>
+    <!-- About phone screen, Cum OS version -->
+    <string name="cum_version">Cum 版本</string>
+    <string name="cum_version_default">不明</string>
+    <string name="keywords_cum_version">CumOS version, cum version</string>
+    <!-- About phone screen, build date -->
+    <string name="about_device_name">Device</string>
+    <string name="build_date">建置日期</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
+    <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">最低螢幕刷新率</string>
+    <string name="max_refresh_rate_title">最高螢幕刷新率</string>
+    <string name="low_power_refresh_rate_title_custom">省電刷新率</string>
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">螢幕截圖音效</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">接上或移除電源時喚醒</string>
+    <string name="wake_when_plugged_or_unplugged_summary">在接上或拔除電源時開啟螢幕</string>
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">防止意外喚醒</string>
+    <string name="proximity_wake_summary">在喚醒螢幕之前檢查距離傳感器</string>
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+    <!--Cum Settings-->
+    <string name="cum_settings_title">Cum 設定</string>
+    <string name="cum_settings_summary">快樂來自您自己的行動</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">指示燈顏色</string>
+    <string name="custom_light_on_time_title">在 LED 閃爍時燈號開啟時間 (毫秒)</string>
+    <string name="custom_light_off_time_title">在 LED 閃爍時燈號的關閉時間 (毫秒)</string>
+    <string name="value_equals_default">預設</string>
+    <!-- Screen off FOD -->
+    <string name="screen_off_udfps_title">Screen off FOD</string>
+    <string name="screen_off_udfps_summary">Keep FOD enabled when the screen is off</string>
+    <!-- FastCharge feature -->
+    <string name="fast_charging_title">Fast charging</string>
+    <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">智慧暫停</string>
+    <string name="adaptive_playback_master_switch_title">Use Smart Pause</string>
+    <string name="adaptive_playback_disabled_summary">關閉</string>
+    <string name="adaptive_playback_intro_text">靜音後，自適應播放會自動暫停媒體，當音量在設定時間內恢復時會自動恢復播放。</string>
+    <string name="adaptive_playback_timeout_title">超過時間</string>
+    <string name="adaptive_playback_timeout_none">不限時間</string>
+    <string name="adaptive_playback_timeout_none_summary">開啟 (無超時)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 秒</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">開啟 (30秒)</string>
+    <string name="adaptive_playback_timeout_1_min">1 分鐘</string>
+    <string name="adaptive_playback_timeout_1_min_summary">開啟 (1 分鐘)</string>
+    <string name="adaptive_playback_timeout_2_min">2 分鐘</string>
+    <string name="adaptive_playback_timeout_2_min_summary">開啟 (2分鐘)</string>
+    <string name="adaptive_playback_timeout_5_min">5 分鐘</string>
+    <string name="adaptive_playback_timeout_5_min_summary">開啟 (5分鐘)</string>
+    <string name="adaptive_playback_timeout_10_min">10 分鐘</string>
+    <string name="adaptive_playback_timeout_10_min_summary">開啟 (10分鐘)</string>
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">雙擊</string>
+    <string name="doze_double_tap_title">輕觸兩下來察看手機</string>
+    <string name="doze_double_tap_summary">輕觸兩下查看 AOD 顯示通知</string>
+    <!-- Fingerprint wake-and-unlock -->
+    <string name="fingerprint_wake_unlock_title">Touch fingerprint to unlock</string>
+    <string name="fingerprint_wake_unlock_touch">Listens for events while the screen is off</string>
+    <string name="fingerprint_wake_unlock_press">Only listens for events once the screen is on</string>
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">亂序佈局</string>
+    <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用亂序 PIN 碼佈局</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">快速解鎖</string>
+    <string name="unlock_quick_unlock_control_summary">當正確輸入PIN碼/密碼時自動解鎖</string>
+    <!-- Fullscreen gestures -->
+    <string name="navbar_category">Navigation bar</string>
+    <!-- Gesture navbar length -->
+    <string name="gesture_navbar_length_title">主畫面按鈕長度</string>
+    <string name="hide_label">Hidden</string>
+    <string name="long_label">長</string>
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此設備\u2019的 VPN 連接到上遊</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">返回手勢動畫</string>
+    <string name="back_gesture_arrow_summary">使用返回手勢時顯示一個箭頭</string>
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Touchscreen hovering</string>
+    <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+    <!-- High touch polling rate -->
+    <string name="high_touch_polling_rate_title">High touch polling rate</string>
+    <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，藉此改善可讀性和減少眼睛疲勞</string>
+    <string name="live_display_mode">顯示模式</string>
+    <string name="live_display_color_temperature_title">色溫</string>
+    <string name="live_display_color_temperature_summary">白天：<xliff:g id="day_temperature">%1$d</xliff:g>K 夜晚：<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">白天</string>
+    <string name="live_display_night">夜晚</string>
+    <string name="live_display_outdoor_mode_title">自動開啟戶外模式</string>
+    <string name="live_display_outdoor_mode_summary">在陽光下自動提高亮度和飽和度</string>
+    <string name="live_display_anti_flicker_title">防閃爍</string>
+    <string name="live_display_anti_flicker_summary">在缺乏光線的環境下，防止大量閃爍並減少視覺疲勞。 這可能會降低色彩準確率，並影響某些項目的顯示方式。</string>
+    <string name="live_display_low_power_title">降低耗電量</string>
+    <string name="live_display_low_power_summary">在不降低亮度的情況下調整螢幕顯示以降低耗電量</string>
+    <string name="live_display_enhance_color_title">增強色彩</string>
+    <string name="live_display_enhance_color_summary">為風景照和其他圖片增強色彩</string>
+    <string name="live_display_color_profile_title">色彩設定檔</string>
+    <string name="live_display_color_profile_standard_title">標準</string>
+    <string name="live_display_color_profile_standard_summary">準確的色彩和明亮的白色</string>
+    <string name="live_display_color_profile_natural_title">自然</string>
+    <string name="live_display_color_profile_natural_summary">真實的色彩和自然膚色</string>
+    <string name="live_display_color_profile_dynamic_title">動態</string>
+    <string name="live_display_color_profile_dynamic_summary">增強的色彩和明亮的白色</string>
+    <string name="live_display_color_profile_cinema_title">劇院</string>
+    <string name="live_display_color_profile_cinema_summary">完美呈現影片色彩</string>
+    <string name="live_display_color_profile_astronomy_title">天文</string>
+    <string name="live_display_color_profile_astronomy_summary">使用深紅色彩來過濾藍光以保護視力</string>
+    <string name="live_display_color_profile_photography_title">攝影</string>
+    <string name="live_display_color_profile_photography_summary">完美重現相片色彩</string>
+    <string name="live_display_color_profile_basic_title">基本</string>
+    <string name="live_display_color_profile_basic_summary">使用未校正的顯示模式</string>
+    <string name="live_display_color_profile_adaptive_title">自動調整</string>
+    <string name="live_display_color_profile_adaptive_summary">依照環境條件自動調節色彩</string>
+    <string name="live_display_color_profile_reading_title">閱讀</string>
+    <string name="live_display_color_profile_reading_summary">藉由暖色調來減少視覺疲勞</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">使用 sRGB 色域校準色彩</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3 廣色域標準</string>
+    <string name="live_display_color_profile_dci_p3_summary">使用 DCI-P3 色域校準螢幕色彩</string>
+    <string name="live_display_reading_mode_title">閱讀模式</string>
+    <string name="live_display_reading_mode_summary">適合長期閱讀的灰階模式</string>
+    <string name="color_calibration_title">色彩校正</string>
+    <string name="color_calibration_summary">校正螢幕上的色彩</string>
+    <string name="color_red_title">紅色</string>
+    <string name="color_green_title">綠色</string>
+    <string name="color_blue_title">藍色</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">顯示調整</string>
+    <string name="picture_adjustment_summary">調整色相、飽和度、強度和對比度</string>
+    <string name="adj_hue_title">色相</string>
+    <string name="adj_saturation_title">飽和度</string>
+    <string name="adj_intensity_title">強度</string>
+    <string name="adj_contrast_title">對比度</string>
+    <!-- Per-app volume control -->
+    <string name="app_volume">應用程式音量</string>
+    <string name="app_volume_title">個別應用程式音量</string>
+    <string name="app_volume_summary">允許針對個別應用程式設定音量</string>
+    <!-- Cloudflare DNS Option -->
+    <!-- AdGuard DNS Option -->
+    <!-- Navigation bar IME space -->
+    <string name="hidden_string">Hidden</string>
+    <string name="navigation_bar_ime_space_title">Space under the keyboard</string>
+    <string name="navigation_bar_ime_space_value_narrow">Narrow</string>
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">在充電時開啟 AOD</string>
+    <string name="doze_on_charge_summary">充電時一直處於 Doze 介面</string>
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">全螢幕</string>
+    <string name="back_height_high_label">底部</string>
+    <string name="back_options_dialog_title">選項</string>
+    <string name="back_height_message">可觸發返回手勢的螢幕高度範圍</string>
+    <!-- Hotspot -->
+    <string name="wifi_hotspot_hidden_ssid_title">隱藏的網路</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">您的移動熱點名稱不會出現在可用 WLAN 網絡列表中</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">永不關閉無線基地台</string>
+    <string name="wifi_hotspot_client_manager_title">已連線的裝置</string>
+    <string name="wifi_hotspot_client_manager_summary">列出和管理連接到無線基地台的設備，並設置客戶端數量限制</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">列出連接到無線基地台的設備</string>
+    <string name="wifi_hotspot_client_limit_title">連接設備的限制</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">被封鎖的設備</string>
+    <string name="wifi_hotspot_connected_clients_list_title">已連接裝置</string>
+    <string name="wifi_hotspot_block_client_dialog_title">被封鎖的設備</string>
+    <string name="wifi_hotspot_block_client_dialog_text">此操作將斷開“<xliff:g id="device_name">%1$s</xliff:g>”與此設備的連接並將其添加到阻止列表</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">解鎖設備</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">此設備“<xliff:g id="device_name">%1$s</xliff:g>”將能夠連接到此無線基地台</string>
+    <string name="wifi_hotspot_client_manager_footer_text">當前沒有可用的客戶端。如果可用，將在此處列出已連接和已阻止的設備。</string>
+    <!--  screen, setting option summary to change custom timeout -->
+    <string name="custom_timeout_summary_never">Never</string>
+    <string name="custom_timeout_summary_5secs">5 seconds</string>
+    <string name="custom_timeout_summary_10secs">10 seconds</string>
+    <string name="custom_timeout_summary_15secs">15 seconds</string>
+    <string name="custom_timeout_summary_30secs">30 seconds</string>
+    <string name="custom_timeout_summary_1min">1 minute</string>
+    <string name="custom_timeout_summary_2mins">2 minutes</string>
+    <string name="custom_timeout_summary_5mins">5 minutes</string>
+    <string name="custom_timeout_summary_10mins">10 minutes</string>
+    <string name="custom_timeout_summary_20mins">20 minutes</string>
+    <string name="custom_timeout_summary_30mins">30 minutes</string>
+    <string name="custom_timeout_summary_1hour">1 hour</string>
+    <string name="custom_timeout_summary_2hours">2 hours</string>
+    <string name="custom_timeout_summary_4hours">4 hours</string>
+    <string name="custom_timeout_summary_8hours">8 hours</string>
+    <!-- Warning message displayed if user choses not to validate the EAP server -->
+    <string name="wifi_do_not_validate_eap_server_warning">你未指定任何憑證，因此無法為你設定私人連線。</string>
+    <!-- CumOS versioning -->
+    <string name="cum_version_title">Cum Version</string>
+    <string name="cum_device_title">Device</string>
+    <string name="cum_release_type_title">Release type</string>
+    <string name="cum_maintainer_title">Maintainer</string>
+    <!-- About page -->
+    <string name="battery">Battery</string>
+    <string name="display">Display</string>
+    <string name="storage">Storage</string>
+    <string name="chipset">Chipset</string>
+    <!-- Settings homepage alternative header -->
+    <string name="top_level_settings_title">Settings</string>
+    <string name="wellbeing_title">谷歌福利</string>
+    <string name="usercard_summary">目前的使用者，輕觸了解更多訊息</string>
+    <string name="connectivity_category_title">連接</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">全螢幕應用程式</string>
+    <string name="display_cutout_force_fullscreen_summary">強制應用程式忽略螢幕瀏海、挖孔等區域</string>
+</resources>
